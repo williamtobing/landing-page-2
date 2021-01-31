@@ -2,7 +2,7 @@ import PersonImg from "../assets/person.jpg";
 
 const Testimonial = () => {
   return (
-    <section className="testimonial-section">
+    <section className="testimonials-section">
       <div className="container">
         <ul>
           <li>
