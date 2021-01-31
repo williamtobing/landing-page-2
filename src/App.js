@@ -1,8 +1,20 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import Testimonial from "./components/Testimonial";
+import Contact from "./components/Contact";
+
+import "./App.scss";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Landing Page - 2</h1>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <Features />
+      <Testimonial />
+      <Contact />
+    </>
   );
 }
 
