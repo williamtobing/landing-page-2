@@ -14,17 +14,21 @@ const Contact = () => {
             <input type="email" name="email" />
             <label htmlFor="message">Message</label>
             <textarea name="message" cols="30" rows="10" />
-            <input className="send-message-cta" type="submit" value="Send" />
+            <input
+              className="send-message-cta"
+              type="submit"
+              value="Send message"
+            />
           </form>
         </div>
 
         <div className="contact-right">
           <Iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d510380.95038195467!2d98.78925614548261!3d2.015026824243331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e6afe1293bcf5%3A0x3039d80b220d160!2sNorth%20Tapanuli%20Regency%2C%20North%20Sumatra!5e0!3m2!1sen!2sid!4v1612067144219!5m2!1sen!2sid"
+            className="map-iframe"
             width="600"
             height="450"
             frameborder="0"
-            style={{ border: 0 }}
             allowfullscreen=""
             aria-hidden="false"
             tabindex="0"

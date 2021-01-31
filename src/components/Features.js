@@ -4,7 +4,7 @@ const Features = () => {
   return (
     <section className="features-section">
       <div className="container">
-        <ul>
+        <ul className="features-list">
           <li>Unlimited Tasks</li>
           <li>SMS Task Reminders</li>
           <li>Confetti Explosions upon Task Completions</li>
