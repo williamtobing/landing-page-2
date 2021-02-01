@@ -112,6 +112,7 @@ section {
 
 .hero-img {
   width: 70%;
+  max-width: 490px;
   margin-top: 3em;
 }
 
@@ -346,6 +347,17 @@ nav {
 
 // Responsive 1080px
 @media only screen and (min-width: 1080px) {
+  .hero {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+
+    .subhead,
+    .hero-img {
+      margin-top: 10em;
+    }
+  }
+
   .container {
     width: 80%;
     margin: 0 auto;
@@ -441,9 +453,7 @@ nav {
       }
     }
   }
-}
 
-@media only screen and (min-width: 1450px) {
   .features-section {
     &:before {
       content: "";
@@ -463,6 +473,20 @@ nav {
       background: url("./assets/dots.svg") no-repeat;
       left: 4.5em;
       top: 2em;
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .hero .container {
+    .left-col {
+      h1 {
+        font-size: 2.4em;
+      }
+
+      a.primary-cta {
+        font-size: 1.2em;
+      }
     }
   }
 }
