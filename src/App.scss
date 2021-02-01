@@ -194,6 +194,7 @@ input[type="submit"] {
   font-size: 1.3em;
   border: none;
   margin-bottom: 5em;
+  // border: 2em solid var(--primary-color);
   border-radius: 5em;
   display: inline-block;
   padding: 0.8em 2em;
@@ -258,6 +259,23 @@ nav {
   cursor: pointer;
 }
 
+.footer-section {
+  padding: 2em;
+  background: var(--third-color);
+  color: white;
+
+  a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.3s;
+    font-weight: bold;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}
+
 // Responsive 768px
 @media only screen and (min-width: 768px) {
   .mobile-menu,
@@ -309,6 +327,15 @@ nav {
         background: var(--primary-color);
         color: white;
       }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      margin: 0;
     }
   }
 }
@@ -392,18 +419,22 @@ nav {
 
     .container {
       display: flex;
-    }
-  }
 
-  .contact-right {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 45%;
-    height: 100%;
+      .contact-left {
+        width: 50%;
+      }
 
-    .map-iframe {
-      height: 100%;
+      .contact-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45%;
+        height: 100%;
+
+        .map-iframe {
+          height: 100%;
+        }
+      }
     }
   }
 }
