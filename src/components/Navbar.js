@@ -32,24 +32,24 @@ const Navbar = () => {
 
           <ul className="primary-nav">
             <li>
-              <a className="current" href="/">
+              <a className="current" href="#to-home">
                 Home
               </a>
             </li>
             <li>
-              <a href="/">Features</a>
+              <a href="#to-features">Features</a>
             </li>
             <li>
-              <a href="/">Pricing</a>
+              <a href="#to-testimonial">Testimonial</a>
+            </li>
+            <li>
+              <a href="#to-contact">Contact</a>
             </li>
           </ul>
 
           <ul className="secondary-nav">
             <li>
-              <a href="/">Contact</a>
-            </li>
-            <li>
-              <a className="go-premium-cta" href="/">
+              <a className="go-premium-cta" href="#to-contact">
                 Go Premium
               </a>
             </li>
