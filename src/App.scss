@@ -82,15 +82,26 @@ section {
     font-weight: bold;
     border-radius: 5em;
     display: inline-block;
+    transition-duration: 0.3s;
+
+    &:hover {
+      background: white;
+      color: var(--primary-color);
+    }
   }
 
   .watch-video-cta {
     display: block;
     margin-top: 1em;
+    transition-duration: 0.3s;
 
     img {
       margin-bottom: -0.2em;
       margin-right: 0.5em;
+    }
+
+    &:hover {
+      color: var(--primary-color);
     }
   }
 }
@@ -188,6 +199,12 @@ input[type="submit"] {
   padding: 0.8em 2em;
   width: unset;
   cursor: pointer;
+  transition-duration: 0.3s;
+
+  &:hover {
+    background: white;
+    color: var(--primary-color);
+  }
 }
 
 .map-iframe {
