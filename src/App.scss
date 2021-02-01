@@ -112,8 +112,7 @@ ul.features-list {
 
   li {
     font-size: 1.1em;
-    margin-bottom: 1em;
-    margin-left: 2em;
+    margin: 0 2em 1em 2em;
     position: relative;
 
     &:before {
@@ -300,7 +299,7 @@ nav {
 // Responsive 1080px
 @media only screen and (min-width: 1080px) {
   .container {
-    width: 1080px;
+    width: 80%;
     margin: 0 auto;
   }
 
