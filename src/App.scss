@@ -350,10 +350,14 @@ nav {
   .hero {
     height: 100vh;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    .subhead,
-    .hero-img {
-      margin-top: 10em;
+    .hero-content {
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
     }
   }
 
@@ -486,15 +490,6 @@ nav {
       a.primary-cta {
         font-size: 1.2em;
       }
-    }
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .hero {
-    .subhead,
-    .hero-img {
-      margin-top: 15em;
     }
   }
 }
