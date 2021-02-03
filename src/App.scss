@@ -220,7 +220,13 @@ input[type="submit"] {
 }
 
 nav.menu-btn {
-  display: none;
+  right: -100%;
+  transition: 850ms;
+}
+
+nav.active {
+  right: 0;
+  transition: 350ms;
 }
 
 nav {

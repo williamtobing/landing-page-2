@@ -22,7 +22,7 @@ const Navbar = () => {
           onClick={showNavigation}
         />
 
-        <nav className={navButton ? "" : "menu-btn"}>
+        <nav className={navButton ? "active" : "menu-btn"}>
           <img
             className="mobile-menu-exit"
             src={ExitImg}
