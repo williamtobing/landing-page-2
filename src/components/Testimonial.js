@@ -15,7 +15,7 @@ const Testimonial = () => {
                 delectus praesentium, incidunt ullam! Doloribus reiciendis sint
                 autem eius quisquam possimus tenetur!
               </blockquote>
-              <cite>- Jane Doe</cite>
+              <cite>- Rob Jobs</cite>
             </li>
             <li>
               <img src={PersonImg} alt="Person" />
@@ -25,7 +25,7 @@ const Testimonial = () => {
                 quia dolorum error ea reiciendis, architecto ut, ullam saepe.
                 Corporis omnis voluptatibus eveniet libero adipisci.
               </blockquote>
-              <cite>- Jane Doe</cite>
+              <cite>- Rob Jobs</cite>
             </li>
             <li>
               <img src={PersonImg} alt="Person" />
@@ -35,7 +35,7 @@ const Testimonial = () => {
                 mollitia provident, nam inventore beatae hic odio? Quasi, earum
                 magnam. Beatae maiores architecto culpa!
               </blockquote>
-              <cite>- Jane Doe</cite>
+              <cite>- Rob Jobs</cite>
             </li>
           </Zoom>
         </ul>

@@ -9,12 +9,12 @@ const Hero = () => {
         <Zoom>
           <div className="hero-content">
             <div className="left-col">
-              <p className="subhead">It's Nitty &amp; Gritty</p>
-              <h1>A Task App That Doesn't Stink</h1>
+              <p className="subhead">It's too late to remember</p>
+              <h1>A Task App That Never Remember</h1>
 
               <div className="hero-cta">
                 <a href="/" className="primary-cta">
-                  Try for free
+                  Try &amp; Pay
                 </a>
                 <a href="/" className="watch-video-cta">
                   <img src={WatchImg} alt="Watch a video" />

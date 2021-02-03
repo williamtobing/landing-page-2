@@ -34,6 +34,7 @@ const Contact = () => {
               allowfullscreen=""
               aria-hidden="false"
               tabindex="0"
+              title="North Tapanuli"
             />
           </div>
         </Zoom>
