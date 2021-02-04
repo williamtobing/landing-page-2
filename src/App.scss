@@ -199,7 +199,6 @@ input[type="submit"] {
   font-size: 1.3em;
   border: none;
   margin-bottom: 5em;
-  // border: 2em solid var(--primary-color);
   border-radius: 5em;
   display: inline-block;
   padding: 0.8em 2em;
@@ -341,6 +340,17 @@ nav {
     }
   }
 
+  .testimonials-section ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    justify-content: center;
+
+    li {
+      margin: 2em 1em;
+    }
+  }
+
   .footer {
     display: flex;
     justify-content: space-between;
@@ -431,12 +441,7 @@ nav {
   }
 
   .testimonials-section ul {
-    display: flex;
-    margin: 0;
-
-    li {
-      margin: 0 1em;
-    }
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .contact-section {
