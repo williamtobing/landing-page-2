@@ -8,6 +8,8 @@ const Navbar = () => {
 
   const showNavigation = () => setNavButton(!navButton);
 
+  const closeNavigation = () => setNavButton(false);
+
   return (
     <div className="navbar">
       <div className="container">
@@ -32,24 +34,34 @@ const Navbar = () => {
 
           <ul className="primary-nav">
             <li>
-              <a className="current" href="#to-home">
+              <a className="current" href="#to-home" onClick={closeNavigation}>
                 Home
               </a>
             </li>
             <li>
-              <a href="#to-features">Features</a>
+              <a href="#to-features" onClick={closeNavigation}>
+                Features
+              </a>
             </li>
             <li>
-              <a href="#to-testimonial">Testimonial</a>
+              <a href="#to-testimonial" onClick={closeNavigation}>
+                Testimonial
+              </a>
             </li>
             <li>
-              <a href="#to-contact">Contact</a>
+              <a href="#to-contact" onClick={closeNavigation}>
+                Contact
+              </a>
             </li>
           </ul>
 
           <ul className="secondary-nav">
             <li>
-              <a className="go-premium-cta" href="#to-contact">
+              <a
+                className="go-premium-cta"
+                href="#to-contact"
+                onClick={closeNavigation}
+              >
                 Go Premium
               </a>
             </li>
