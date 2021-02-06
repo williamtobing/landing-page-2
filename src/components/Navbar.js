@@ -8,6 +8,14 @@ const Navbar = () => {
   const nav = useSelector((state) => state.nav);
   const dispatch = useDispatch();
 
+  const showNav = () => {
+    dispatch(show());
+  };
+
+  const hideNav = () => {
+    dispatch(hide());
+  };
+
   return (
     <div className="navbar">
       <div className="container">
@@ -19,7 +27,7 @@ const Navbar = () => {
           className="mobile-menu"
           src={MenuImg}
           alt="Open Navigation"
-          onClick={() => dispatch(show())}
+          onClick={showNav}
         />
 
         <nav className={nav ? "active" : "menu-btn"}>
@@ -27,31 +35,27 @@ const Navbar = () => {
             className="mobile-menu-exit"
             src={ExitImg}
             alt="Close Navigation"
-            onClick={() => dispatch(show())}
+            onClick={showNav}
           />
 
           <ul className="primary-nav">
             <li>
-              <a
-                className="current"
-                href="#to-home"
-                onClick={() => dispatch(hide())}
-              >
+              <a className="current" href="#to-home" onClick={hideNav}>
                 Home
               </a>
             </li>
             <li>
-              <a href="#to-features" onClick={() => dispatch(hide())}>
+              <a href="#to-features" onClick={hideNav}>
                 Features
               </a>
             </li>
             <li>
-              <a href="#to-testimonial" onClick={() => dispatch(hide())}>
+              <a href="#to-testimonial" onClick={hideNav}>
                 Testimonial
               </a>
             </li>
             <li>
-              <a href="#to-contact" onClick={() => dispatch(hide())}>
+              <a href="#to-contact" onClick={hideNav}>
                 Contact
               </a>
             </li>
@@ -62,7 +66,7 @@ const Navbar = () => {
               <a
                 className="go-premium-cta"
                 href="#to-contact"
-                onClick={() => dispatch(hide())}
+                onClick={hideNav}
               >
                 Go Premium
               </a>
