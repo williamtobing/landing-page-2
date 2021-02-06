@@ -1,14 +1,12 @@
-import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { show, hide } from "../actions";
 
 import MenuImg from "../assets/menu.svg";
 import ExitImg from "../assets/exit.svg";
 
 const Navbar = () => {
-  const [navButton, setNavButton] = useState(false);
-
-  const showNavigation = () => setNavButton(!navButton);
-
-  const closeNavigation = () => setNavButton(false);
+  const nav = useSelector((state) => state.nav);
+  const dispatch = useDispatch();
 
   return (
     <div className="navbar">
@@ -21,35 +19,39 @@ const Navbar = () => {
           className="mobile-menu"
           src={MenuImg}
           alt="Open Navigation"
-          onClick={showNavigation}
+          onClick={() => dispatch(show())}
         />
 
-        <nav className={navButton ? "active" : "menu-btn"}>
+        <nav className={nav ? "active" : "menu-btn"}>
           <img
             className="mobile-menu-exit"
             src={ExitImg}
             alt="Close Navigation"
-            onClick={showNavigation}
+            onClick={() => dispatch(show())}
           />
 
           <ul className="primary-nav">
             <li>
-              <a className="current" href="#to-home" onClick={closeNavigation}>
+              <a
+                className="current"
+                href="#to-home"
+                onClick={() => dispatch(hide())}
+              >
                 Home
               </a>
             </li>
             <li>
-              <a href="#to-features" onClick={closeNavigation}>
+              <a href="#to-features" onClick={() => dispatch(hide())}>
                 Features
               </a>
             </li>
             <li>
-              <a href="#to-testimonial" onClick={closeNavigation}>
+              <a href="#to-testimonial" onClick={() => dispatch(hide())}>
                 Testimonial
               </a>
             </li>
             <li>
-              <a href="#to-contact" onClick={closeNavigation}>
+              <a href="#to-contact" onClick={() => dispatch(hide())}>
                 Contact
               </a>
             </li>
@@ -60,7 +62,7 @@ const Navbar = () => {
               <a
                 className="go-premium-cta"
                 href="#to-contact"
-                onClick={closeNavigation}
+                onClick={() => dispatch(hide())}
               >
                 Go Premium
               </a>
