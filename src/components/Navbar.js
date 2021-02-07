@@ -35,7 +35,7 @@ const Navbar = () => {
             className="mobile-menu-exit"
             src={ExitImg}
             alt="Close Navigation"
-            onClick={showNav}
+            onClick={hideNav}
           />
 
           <ul className="primary-nav">
