@@ -5,7 +5,7 @@ const Footer = () => {
     <section className="footer-section">
       <div className="container footer">
         <Zoom>
-          <a href="https://williamsl.tech" target="_blank">
+          <a href="https://williamsl.tech" target="_blank" rel="noreferrer">
             About
           </a>
           <p>Copyright &copy; 2021. All Right Reserved</p>
